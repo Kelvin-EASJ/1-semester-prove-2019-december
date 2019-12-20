@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Quickmaths {
     public static void main(String[] args) {
-
+        //en lommeregner metoder hvor man indtaster to numre hvor den så returnere summen og gennemsnittet.
         Scanner input = new Scanner(System.in);
         float gennemsnit;
         System.out.println("Skriv det første nummer: ");

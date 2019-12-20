@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Developed by András Ács (acsandras@gmail.com)
  * Zealand / www.zealand.dk
@@ -28,6 +30,7 @@ public class Loops {
     public void printBrugereArr() {
 
         // TODO Din kode her
+
     }
 
     /**
@@ -41,7 +44,17 @@ public class Loops {
 
     public void waitingFor0() {
 
-        // TODO Din kode her
- 
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Indtast et nummer over nul!");
+        int number;
+        while (input.nextInt() != 0) {
+            number = input.nextInt();
+            System.out.println("Nummeret er stadig ikke nul! valgte nummer: " + number);
+            if (input.nextInt() == 0) {
+                System.out.println("Nummeret er nu nul!");
+                break;
+            }
+        }
     }
-}
+    }

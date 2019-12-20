@@ -1,13 +1,15 @@
+import java.util.Scanner;
 import junit.framework.TestCase;
 
-public class MainTest extends TestCase {
+public class MainTest extends TestCase  {
 
 
     public void testHelloAndras() {
 
-        Main m = new Main();
+        Main main = new Main();
 
-        assertEquals("Hello András!", m.hello("András"));
+
+        assertEquals("Hello Andras!", main.hello("Andras"));
 
     }
 
